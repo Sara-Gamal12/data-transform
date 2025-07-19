@@ -26,7 +26,7 @@ A Spring Boot application designed to transform third-party raw key-value data i
 ## Demo 
 - To quickly demonstrate the functionality, a sample input is hardcoded and processed in the `main()` method of the `DataTransformApplication` class.
 -  The application also has a REST API at `/api/transform` where you can POST raw key-value data and receive a localized response.
-![Recording 2025-07-19 052206](https://github.com/user-attachments/assets/8d5e104a-a339-4c34-b0a2-1ba6df4cde0f)
+![Recording2025-07-19052206-ezgif com-optimize](https://github.com/user-attachments/assets/d21705a2-e0e5-46cc-8261-4f2098cc0c99)
 
 ## Technologies Used
 - Java 17
