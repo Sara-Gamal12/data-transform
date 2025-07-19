@@ -1,4 +1,4 @@
-
+![Recording 2025-07-19 052206](https://github.com/user-attachments/assets/97e495fd-7887-47bf-9b3f-110e1b640121)
 
 # 🛠️ Data Transform Service
 
@@ -6,6 +6,7 @@ A Spring Boot application designed to transform third-party raw key-value data i
 
 ## Table of Contents
 - [Features](#features)
+- [Demo](#demo)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
 - [How It Works](#how-it-works)
@@ -24,6 +25,9 @@ A Spring Boot application designed to transform third-party raw key-value data i
 - Unit tests included (uses `@SpringBootTest`)
 
 ---
+## Demo 
+
+![Recording 2025-07-19 052206](https://github.com/user-attachments/assets/8d5e104a-a339-4c34-b0a2-1ba6df4cde0f)
 
 ## Technologies Used
 - Java 17
