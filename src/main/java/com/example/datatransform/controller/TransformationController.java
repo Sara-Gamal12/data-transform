@@ -86,25 +86,28 @@ public class TransformationController {
     public ResponseEntity<String> transformData(@RequestBody   String rawData,
                                                 @RequestParam (required = false)  String source,
 
-                                                @RequestParam (required = false) String language) {
-        if(source == null) {
+                                                @RequestParam (required = false) String language)
+    {
+        if(source == null)
             return ResponseEntity.badRequest().body("Source parameter is required.");
-        }
-        String finalLang=(language == null || !languageConfig.getSupportedLanguages().contains(language.toLowerCase().trim()))?languageConfig.getDefaultLanguage():language;
+
+        String finalLang=(language == null || !languageConfig.getSupportedLanguages().contains(language.toLowerCase().trim()))
+                ?languageConfig.getDefaultLanguage()
+                :language;
 
 
 
             TransformationStrategy strategy = strategyFactory.getStrategy(source.trim());
-            if (strategy == null) {
+            if (strategy == null)
                 return ResponseEntity.badRequest().body("Unsupported source: " + source);
-            }
             String result = strategy.transform(rawData, finalLang);
-
-            if (language!=null && !language.equalsIgnoreCase(finalLang)) {
+            if (language!=null && !language.equalsIgnoreCase(finalLang))
                 result = "Language not supported, defaulting to " + finalLang + ":\n" + result;
-            }
+
             return ResponseEntity.ok(result);
 
 
     }
+
+
 }
