@@ -33,7 +33,6 @@ public class TransformationService {
                 int labelId = mapping.getLabelId();
                 Label label = labelMap.get(labelId);
                 if (label != null) {
-                    System.out.println(mapping.getThirdPartyKey());
                     localizedKeys.put(mapping.getThirdPartyKey(), label.getLabel(languageCode));
                 }
             }
