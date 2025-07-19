@@ -1,0 +1,26 @@
+data:
+  labels:
+    - id: 1
+      labelEn: "Client Name"
+      labelAr: "اسم العميل"
+    - id: 2
+      labelEn: "Mobile Number"
+      labelAr: "رقم الموبايل"
+
+  mappings:
+    - id: 1
+      labelId: 1
+      thirdPartyKey: "client_name"
+      thirdPartySource: "party1"
+    - id: 2
+      labelId: 2
+      thirdPartyKey: "mobile_number"
+      thirdPartySource: "party1"
+    - id: 3
+      labelId: 1
+      thirdPartyKey: "customer_name"
+      thirdPartySource: "party2"
+    - id: 4
+      labelId: 2
+      thirdPartyKey: "ClientMobile"
+      thirdPartySource: "party2"
